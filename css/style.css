@@ -1,4 +1,4 @@
-/* Enter your Styles below! */
+ Enter your Styles below! */
 
 
 body { 
@@ -10,20 +10,24 @@ h1, h2, h3, h4 {
 	font-family: Helvetica, sans-serif;
 }
 
-h1 {
-	font-size: 48px;
+.title {font-family:'Playfair Display', serif;
+font-size : 80px;
+text-align: left;
+padding-top: 60px;
+padding-bottom:20px; 
+margin-left: 80px; 
+color:#C71585;
 }
 
-h2 {
-	font-size: 36px;
-}
+.about {font-family:'Montserrat', sans-serif;
+font-size : 16px;
+text-align: left;
+line-height: 25px;
+color:black;
+margin-left:80px;}
 
-h3 {
-	font-size: 28px;
-}
-h4 {
-	font-size: 24px;
-}
+.about {max-width: 850px;}
+
 
 blockquote {
 	margin: 20px 60px;
@@ -34,6 +38,9 @@ header {margin-bottom: 20px;}
 
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
+
+
+
 
 a { 
 	color: red;
@@ -49,9 +56,12 @@ a:hover { color: black; }
 	margin: auto;
 }
 
-.grid div {
-	background-color: #ccc;
-	padding: 20px;
+img {
+width: 100%;
+padding-top: 20px}
+
+
+
 }
 @media only screen and (min-width: 768px ){
 	body {
@@ -76,4 +86,3 @@ a:hover { color: black; }
 font-family: 'Mansalva', cursive;
 font-family: 'Dosis', sans-serif;
 font-family: 'Indie Flower', cursive;
-*/
