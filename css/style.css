@@ -2,13 +2,32 @@
 
 
 body { 
-	font-family: Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	 }
 
-h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+nav {
+text-align: right;
+margin: 0px 80px ;
+padding: 10px 0;
+padding-bottom: 5px;
 }
+
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
+
+nav li {
+   display: inline-block;
+   padding: 20px 20px;
+margin-left:-10px;}
+nav a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
 
 .title {font-family:'Playfair Display', serif;
 font-size : 80px;
@@ -17,6 +36,25 @@ padding-top: 60px;
 padding-bottom:20px; 
 margin-left: 80px; 
 color:#C71585;
+}
+
+.contact {
+font-family:'Playfair Display', sans-serif;
+font-size : 20px;
+text-align: center;
+line-height: 25px;
+color:#C71585;
+margin-left:100px;
+}
+
+.info {
+font-family:'Montserrat', sans-serif;
+font-size : 14px;
+text-align: center;
+line-height: 20px;
+color:black;
+margin-left:100px;
+
 }
 
 .about {font-family:'Montserrat', sans-serif;
@@ -31,19 +69,26 @@ margin-left:80px;}
 
 blockquote {
 	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
-}
+	font-family: 'Montserrat', sans-serif;}
 
 header {margin-bottom: 20px;}
 
 /* ensures that your images stretch the width of their containers */
-img { width: 100%; }
-
-
+.home .long img { width: 100%;
+}
+.home .bun img { width: 100%;
+}
+.home .salon img { width:100%;
+}
+/*
+ 	.home .grid2 img
+ 	{padding-top: 50px;
+ 	padding-left: 80px;}*/
+ 
 
 
 a { 
-	color: red;
+	color:#C71585 ;
 	text-decoration: none;
 	 }
 a:hover { color: black; }
@@ -56,9 +101,9 @@ a:hover { color: black; }
 	margin: auto;
 }
 
-img {
+/*img {
 width: 100%;
-padding-top: 20px}
+padding-top: 5px}*/
 
 
 
@@ -82,7 +127,3 @@ padding-top: 20px}
 	body {
 		background-color: white;
 	}
-/*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
