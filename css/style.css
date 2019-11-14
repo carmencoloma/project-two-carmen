@@ -6,28 +6,40 @@ body {
 	font-size: 16px;
 	 }
 
-nav {
-text-align: right;
-margin: 0px 80px ;
-padding: 10px 0;
-padding-bottom: 5px;
+.section-div{
+text-align: center;
+padding: 20px;
+background-color:#C71585;
+margin-top:-10px
 }
 
 nav ul{
-  list-style: none;
-  margin: 0 2px;
-  padding: 0;
+  text-align: right;
+  list-style-type: none;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+
 }
 
 nav li {
-   display: inline-block;
-   padding: 20px 20px;
-margin-left:-10px;}
+display: inline-block;
+padding: 20px 20px;
+margin-left:-10px;
+}
+
 nav a{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
 
+.home-about-section {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+
+.home-about-section img {padding: 20px;}
 
 .title {font-family:'Playfair Display', serif;
 font-size : 80px;
@@ -62,7 +74,8 @@ font-size : 16px;
 text-align: left;
 line-height: 25px;
 color:black;
-margin-left:80px;}
+margin-bottom:20px;
+}
 
 .about {max-width: 850px;}
 
@@ -74,11 +87,18 @@ blockquote {
 header {margin-bottom: 20px;}
 
 /* ensures that your images stretch the width of their containers */
-.home .long img { width: 100%;
+
+.home .grid1 img { width: 100%;
 }
-.home .bun img { width: 100%;
+.home .grid img { width: 100%;
 }
-.home .salon img { width:100%;
+.home .grid1 img { width: 100%;
+}
+
+.gallary .grid img { width:50%;
+}
+
+.services .grid img { width:55%;
 }
 /*
  	.home .grid2 img
@@ -101,29 +121,28 @@ a:hover { color: black; }
 	margin: auto;
 }
 
-/*img {
+img {
 width: 100%;
-padding-top: 5px}*/
-
-
-
+padding-top: 5px
 }
+
+
+
 @media only screen and (min-width: 768px ){
-	body {
-		background-color: skyblue;
-	}
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 70%;
+	}
 
 }
 @media only screen and (min-width: 1024px ){
-	body {
-		background-color: salmon;
+	.home-about-section {
+		grid-template-columns: 1fr 1fr;
 	}
+}
 
 @media only screen and (min-width: 1200px ){
-	body {
-		background-color: white;
-	}
+
+}
