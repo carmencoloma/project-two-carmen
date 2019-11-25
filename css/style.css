@@ -139,27 +139,6 @@ height:10px;
     }
 
 
-/*nav ul{
-  text-align: right;
-  list-style-type: none;
-  padding-right: 30px;
-  padding-bottom: 30px;
-
-
-}
-
-nav li {
-display: inline-block;
-padding: 10px 10px;
-margin-left:-10px;
-}
-
-nav a{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-}
-
 /*<logo>*/
 .desktop img{
 width:30%;
@@ -516,8 +495,10 @@ a:hover { color: black; }
 
 img {
 width: 100%;
-padding-top: 5px
+padding-top: 0px
 }
+
+
 
 
 
@@ -545,7 +526,14 @@ padding-bottom: 20px;
 	grid-template-columns: 1fr 1fr;
 	width: 90%;
 	}
-
+.hair-salon-content{
+	grid-column:1;
+	grid-row:1;
+}
+.hair-salon-images {
+	grid-column: 2;
+	grid-column: 1;
+}
 /*.home-about-section{
 grid-column-end:1;
 }*/
@@ -604,19 +592,32 @@ max-width: 750px;}
 
 
 /*<services>*/
+
+.face img{
+width: 100%;
+padding-left:800px;
+padding-bottom:20px;
+}
+
+
 .haircut{
 display: grid;
 	grid-template-columns: 50% 1fr 1fr;
 	width: 90%;
 	}
 .facial {
-display: grid;
+    display: grid;
 	grid-template-columns: 50% 1fr 1fr;
-	width: 90%;
-	} 
-.facial img{
-text-align:right 
+	width: 90%; 
 } 
+.face{
+margin-left:120px;
+margin-right:130px; 
+padding-bottom: 0.1px;
+}
+/*.facial img{
+text-align:right 
+} */
 
 .services .section-div{
 text-align: center;
@@ -652,11 +653,12 @@ padding-top: 12px;
  .face .subtitle{
 font-family: 'Playfair Display', sans-serif;
 font-weight: 300;
+
 font-size: 30px;
 text-align: left;
 line-height: 30px;
 color: white;
-margin-left: 79px;
+margin-left: -448px;
 margin-right: 30px;
 padding-top: 40px;
 }
@@ -680,17 +682,18 @@ margin-right: 30px;
 padding-bottom:.01em;
 padding-top:43px;
 }
-.face-menu li{
+.face-menu ul{
 font-family: 'Montserrat', sans-serif;
 font-weight: 300;
-line-height: .0001em;
 font-size: 13px;
-line-height: .01em;
 text-align: left;
 color: white;
-margin-left:-300px;
+margin-left:-800px;
+margin-top: 80px;
 margin-right: 30px;
-padding-top: 30px;
+}
+.face-menu li {
+	line-height:15px; 
 }
 
 
