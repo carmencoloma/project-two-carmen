@@ -3,23 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Project Two - Homepage</title>
-	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200|Playfair+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="Stylesheet" href="https://gitcdn.xyz/repo/thomhines/square1/master/square1.min.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 	<body class="home">
 	
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-
-
-	<div class="logo">
-			<img src="images/logo.png" alt="halo">
-   </div>	
+<div class="bigbox">
+   </div>
 
 	<nav>
 		<header class="nav">
@@ -33,21 +30,30 @@
             <a href="staff.html">STAFF</a>
         </div>          
     </header>
-    <header class="desktop">
-        <div class="menu-desktop">
-            <a href="index.html">HOME</a>
-            <a href="services.html">SERVICES</a>
-            <a href="gallary.html">GALLARY</a>
-            <a href="staff.html">STAFF</a>
-        </div>
-    </header>
-		
+
+
+    <header class="desktop" style="display: block;">
+              <img src="images/logo.png" alt="halo" class="header-logo">
+            <div class="menu-desktop">
+                <a href="index.html">HOME</a>
+                <a href="services.html">SERVICES</a>
+                <a href="gallary.html">GALLARY</a>
+                <a href="staff.html">STAFF</a>
+            </div>
+
+        </header>
+
 	</nav>
 	<main>
 
-		<section class="grid1">
-			
+
+	<section class="grid1">
+
+			 <div class= sildeshow>
 				<img src="images/longhair.jpeg" alt="longhair">
+				<img src="images/afro.jpg" alt="afrohair">
+			    <img src="images/smallhair.jpg" alt="smallhair">
+			 </div>
 
 				<div class="section-div"></div>
 		</section>
@@ -61,7 +67,12 @@
 
 				<article class="grid">
 
-						<img class="hair-salon-content" src="images/salon.jpg" alt="salon">
+                    <div class=iframe-container>
+					<iframe width="660" height="415" src="https://www.youtube.com/embed/QIB_l1CBoog?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				   </div>
+
+
+					<!-- 	<img class="hair-salon-content" src="images/salon.jpg" alt="salon"> -->
 
 					<div class="hair-salon-content">
 						<p class="about">
@@ -107,6 +118,11 @@ Please use the form below to send a note, or ask a question about any or all of 
 
 	</main>
 	<footer>
+		<div class="up" id="up">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <i class="fas fa-chevron-up"></i>
+
 		<!-- footer content here -->
 	</footer>
 	<!-- link for jquery -->
@@ -116,6 +132,8 @@ Please use the form below to send a note, or ask a question about any or all of 
   	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   	crossorigin="anonymous"></script>
   	<!-- link for your script file -->
+<script src="https://gitcdn.xyz/repo/thomhines/square1/master/square1.min.js"></script>
+  	
   	<script src="scripts/script.js"></script>
 </body>
 </html>

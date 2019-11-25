@@ -1,4 +1,5 @@
 
+
 function toggleIcon() {
     $('.icon').on('click', function(){
         $('.icon').toggleClass('active');
@@ -27,20 +28,18 @@ function desktopMenu() {
 //when the page loads call toggleIcon;
 $(toggleIcon);
 $(closeMobileMenu);
-$(desktopMenu);  
+$(desktopMenu);
 
+/*<slideshow>  */
 
+$('.slideshow').square1({
+	animation: 'slide',
+	transition_time: 2000,
+	prev_next_nav: 'hover',
+	dots_nav: 'hover'
+});
 
-
-
-
-
-
-
-
-
-
-
+/*</slideshowend>*/
 
 // End of Your Code . Don't delete that line below!!
 /*});*/
