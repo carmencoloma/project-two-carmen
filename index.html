@@ -13,7 +13,7 @@
 	<link rel="Stylesheet" href="https://gitcdn.xyz/repo/thomhines/square1/master/square1.min.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-	<body class="home">
+<body class="home">
 	
 <div class="bigbox">
    </div>
@@ -33,7 +33,7 @@
 
 
     <header class="desktop" style="display: block;">
-              <img src="images/logo.png" alt="halo" class="header-logo">
+            <img src="images/logo.png" alt="halo" class="header-logo">
             <div class="menu-desktop">
                 <a href="index.html">HOME</a>
                 <a href="services.html">SERVICES</a>
@@ -68,11 +68,9 @@
 				<article class="grid">
 
                     <div class=iframe-container>
-					<iframe width="660" height="415" src="https://www.youtube.com/embed/QIB_l1CBoog?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="660" height="415" src="https://www.youtube.com/embed/QIB_l1CBoog?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
 				   </div>
-
-
-					<!-- 	<img class="hair-salon-content" src="images/salon.jpg" alt="salon"> -->
 
 					<div class="hair-salon-content">
 						<p class="about">
@@ -96,8 +94,13 @@
 <article>
 <div class="container">
  <img src="images/bun.jpg" alt="bun" style="width:100%;">
- <div class="text-block"> 
-<h2>Contact<span>&nbsp;</span></h2>
+ <div class="text-block">
+ <h2 id="text">
+    <span>
+      <noscript>Contact</noscript>
+    </span>
+  </h2> 
+<!-- <h2>Contact<span>&nbsp;</span></h2> -->
  <p>
 For more information about Halo Salon, or to inquire about booking an appointment or a free consultation, please contact us at:<br>
 E-Mail: info@halosalonportland.com<br>
@@ -127,20 +130,44 @@ Please use the form below to send a note, or ask a question about any or all of 
 	</footer>
 	<!-- link for jquery -->
 	<script
-
   	src="https://code.jquery.com/jquery-3.4.1.min.js"
   	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
+  	crossorigin="anonymous"
+  	></script>
+  	<script>
+function randomIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+function typing(p) {
+  $("#" + p).addClass("cursor");
+  let text = $("#" + p).text(),
+    randInt = 0;
+  for (let i = 0; i < text.length; i++) {
+    randInt += parseInt(randomIntFromInterval(10, 140));
+    let typing = setTimeout(
+      function(y) {
+        $("#" + p).append(text.charAt(y));
+      },
+      randInt,
+      i
+    );
+  }
+}
+typing("text");
+</script>
+
   	<!-- link for your script file -->
 <script src="https://gitcdn.xyz/repo/thomhines/square1/master/square1.min.js"></script>
   	
   	<script src="scripts/script.js"></script>
-  	<script type="text/javascript">function(){
+  	<script type="text/javascript">
+function(){
 $('.slideshow').square1({
 	animation: 'slide',
 	transition_time: 2000,
 	prev_next_nav: 'hover',
 	dots_nav: 'hover'
-});</script>
+});
+</script>
 </body>
 </html>

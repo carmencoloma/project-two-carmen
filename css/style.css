@@ -3,7 +3,7 @@
 body { 
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	 }
+	}
 /*<top>*/
 .bigbox {
 margin:50px auto;
@@ -19,13 +19,13 @@ height:10px;
 }
 /*<slideshowend>*/
 
-.iframe-container{
+.iframe-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
 }
-.iframe-container iframe{
+.iframe-container iframe {
   position: absolute;
   top:0;
   left: 0;
@@ -133,24 +133,50 @@ height:10px;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
-        display: none;
+    display: none;
 }
 
 /*<logo>*/
-.desktop img{
+.desktop img {
 width:30%;
 text-align: left;
 padding-top: 25px; 
 padding-left: 30px;
 padding-bottom: 20px;
-
 }
 
 /*home*/
 
+/*typewriter*/
+.cursor::after { color: black; 
+}
+#text {
+  padding: 0.5em;
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+  user-select: none;
+}
+#text::after {
+  content: "_";
+  opacity: 0;
+  animation: cursor 0.5s infinite alternate;
+}
+
+@keyframes cursor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+
+
 
 /*<title>*/
-@-webkit-keyframes typing {
+/*@-webkit-keyframes typing {
     from { width: 100% }
     to { width:0 }
 }
@@ -170,13 +196,14 @@ padding-bottom: 20px;
     50% { border-color: black }
 }
 
-.text-block h2{ 
-	font-family:'Playfair Display', serif;
+.text-block h2 { 
+font-family:'Playfair Display', serif;
  }
 
-h2 { position: relative; 
-    float: left;
-    font-size:150%;
+h2 { 
+position:relative; 
+float: left;
+font-size:150%;
 }
 
 
@@ -186,23 +213,23 @@ h2 span {
     right:0;
     width:0;
     background: white; /* same as background */
-    border-left: .1em solid black;
+    /*border-left: .1em solid black;
     
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    -webkit-animation: typing 18s steps(25, end), /* # of steps = # of characters */
+    /*-webkit-animation: typing 18s steps(25, end), /* # of steps = # of characters */
+/*                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 17s steps(30, end),  # of steps = # of characters 
                         blink-caret 1s step-end infinite;
-    -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
-                        blink-caret 1s step-end infinite;
-}
+}*/
 /*<title>*/
 
-.section-div{
+.section-div {
 text-align: center;
 padding: 20px;
 background-color:#995c00;
-margin-top:-20px
+margin-top:-20px;
 }
 
 .home-about-section {
@@ -217,7 +244,8 @@ padding-right:30px;
 }
 
 
-.title {font-family:'Playfair Display', serif;
+.title {
+font-family:'Playfair Display', serif;
 font-size: 65px;
 text-align: center;
 padding-top: 60px;
@@ -226,7 +254,8 @@ color:#8B4513;
 }
 
 
-.about {font-family:'Montserrat', sans-serif;
+.about {
+font-family:'Montserrat', sans-serif;
 font-weight: 300;
 font-size : 14px;
 text-align: left;
@@ -237,7 +266,8 @@ margin-right:1px;
 margin-bottom:30px;
 }
 
-.about {max-width: 850px;
+.about {
+max-width: 850px;
 }
 
 
@@ -266,7 +296,7 @@ margin-bottom:50px;
 
 /* Container holding the image and the text */
 .container {
-  position: relative;
+ position: relative;
 }
 
 /* Bottom right text */
@@ -281,19 +311,19 @@ top: 160px;
 bottom: 30px;
 } 
 
- .container img{
+.container img {
  padding-top: 50px;
  }
 
 
 /*service*/
-.services .section-div{
+.services .section-div {
 text-align: center;
 padding: 15px;
 background-color:white;
 margin-top:-20px;
 }
-.hair{ 
+.hair { 
 background-color:#FAEBD7;
 display: grid;
 grid-template-columns: 1fr;
@@ -301,12 +331,12 @@ padding-bottom: 20px;
 }
 
 
-.face{
+.face {
 background-color:#663300;
 display: grid;
 grid-template-columns: 1fr;
 padding-bottom: 20px;
-margin-top:10px
+margin-top:10px;
 }
 
 .moreinfo {
@@ -409,94 +439,71 @@ blockquote {
 	font-family: 'Montserrat', sans-serif;
 }
 
-header {margin-bottom: 20px;
+header {
+margin-bottom: 20px;
 }
 /*<gallary>*/
+
+/*gloweffect*/
+.wrapper figure {
+	position: relative;
+}
+.wrapper figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.wrapper figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap:40px;
+  grid-gap:60px;
 }
 
-.photo{
-padding-left:60px;
-padding-right:60px;
-padding-bottom:80px;
-}
+/*photos{
+padding-left:10px;
+padding-right:10px;
+}*/
 
-.wrapper{ 
+.wrapper { 
 background-color:#663300;
 padding:50px;
 }
-.photo img{
-	width:100%;
+.photos img {
+width:100%;
+padding-bottom:50px;
 }
 
-/*gloweffect*/
 
-a{
-  color: #111
-}
 
-.photo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-}
-
-.photo img{
-  width: 500px;
-  height: 580px;
-  object-fit: cover;
-  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-  display: block;
-  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  margin-top: -10px;
-}
-
-.photo:hover img{
-  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
-}
-
-.photo .glow-wrap{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  margin-top: -10px;
-}
-
-.photo .glow{
-  display: block;
-  position:absolute;
-  width: 40%;
-  height: 200%;
-  background: rgba(255,255,255,.2);
-  top: 0;
-  filter: blur(5px);
-  transform: rotate(45deg) translate(-450%, 0);
-  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.photo:hover .glow{
-  transform: rotate(45deg) translate(450%, 0);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.photo:hover img,
-.photo:hover .glow-wrap{
-  margin-top: 0;
-}
-
-/*<gloweffect>*/
 
 /*staff*/
 
-.about-staff {font-family:'Montserrat', sans-serif;
+.about-staff {
+font-family:'Montserrat', sans-serif;
 font-weight: 300;
 font-size : 14px;
 text-align: left;
@@ -509,13 +516,13 @@ margin-bottom:60px;
 }
 
 
-.staff{
+.staff {
 	display:grid;
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
 }
 
-.staff h2{ 
+.staff h2 { 
 font-family:'Playfair Display', sans-serif;
 font-size : 25px;
 text-align: center;
@@ -526,15 +533,15 @@ margin-bottom:5px;
 
 }
 
-.staff{
+.staff {
 padding-left:60px;
 padding-right:60px;
 }
 /*<hover staff>*/
 
-.staff{
-  position: relative;
-  margin: auto;
+.staff {
+ position: relative;
+ margin: auto;
 }
 
 
@@ -584,7 +591,7 @@ border-radius: 50%;
 
 
 a { 
-	color:#C71585 ;
+	color:#C71585;
 	text-decoration: none;
 	 }
 a:hover { color: black; 
@@ -600,7 +607,7 @@ a:hover { color: black;
 
 img {
 width: 100%;
-padding-top: 0px
+padding-top: 0px;
 }
 
 
@@ -617,14 +624,14 @@ height:30px;
 
 }
 
- .slideshow {
+.slideshow {
 	width: 100%;
 	height: 800px;
 	margin: 20px auto;
 	outline: none;
 }
 
-.desktop img{
+.desktop img {
 width:10%;
 text-align: left;
 padding-top: 25px; 
@@ -632,13 +639,13 @@ padding-left: 30px;
 padding-bottom: 20px;
 }
 
-.grid{
+.grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 90%;
 }
 
-.hair-salon-content{
+.hair-salon-content {
 	grid-column:1;
 	grid-row:1;
 }
@@ -749,7 +756,7 @@ h2 span {
 
 /*<services>*/
 
-.face img{
+.face img {
 width: 100%;
 padding-left:800px;
 padding-bottom:20px;
@@ -759,14 +766,14 @@ padding-bottom:20px;
  margin-left: 90px;
  }
 
- .price-treatment{
+ .price-treatment {
  margin-left: 120px;
  }
- .price-facial li{
+ .price-facial li {
  margin-left: 170px;
  }
 
-.haircut{
+.haircut {
 display: grid;
 grid-template-columns: 50% 1fr 1fr;
 width: 90%;
@@ -788,7 +795,7 @@ padding-bottom: 0.1px;
 text-align: center;
 padding: 15px;
 background-color:white;
-margin-top:-20px
+margin-top:-20px;
 }
 
 .hair-menu li{
@@ -816,7 +823,7 @@ margin-left: 79px;
 margin-right: 30px;
 padding-top: 12px;
 }
- .face .subtitle{
+ .face .subtitle {
 font-family: 'Playfair Display', sans-serif;
 font-weight: 300;
 font-size: 30px;
@@ -830,13 +837,13 @@ padding-top: 40px;
 
 
 
-.treatments{
+.treatments {
 display: grid;
-	grid-template-columns: 50% 1fr 1fr;
-	width: 90%;
+grid-template-columns: 50% 1fr 1fr;
+width: 90%;
 }
 
-.treatments-menu li{
+.treatments-menu li {
 font-family: 'Montserrat', sans-serif;
 font-weight: 300;
 font-size: 13px;
@@ -848,7 +855,8 @@ margin-right: 30px;
 padding-bottom:.01em;
 padding-top:43px;
 }
-.face-menu ul{
+
+.face-menu ul {
 font-family: 'Montserrat', sans-serif;
 font-weight: 300;
 font-size: 13px;
@@ -859,7 +867,7 @@ margin-top: 80px;
 margin-right: 30px;
 }
 .face-menu li {
-	line-height:15px; 
+line-height:15px; 
 }
 
 /*<gallary>*/
@@ -878,8 +886,48 @@ margin-left:400px;
 padding-bottom:80px;
 }
 
+.photos img {
+padding-bottom:3px;
+}
 
-.image-resize2{
+/*glow*/
+.wrapper figure {
+	position: relative;
+}
+.wrapper figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	margin-left: 10px;
+    margin-right: 10px;   
+	width: 40%;
+	height: 99%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.wrapper figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/*glow*/
+
+.image-resize2 {
 padding-top:20px;
 height:480px;
 width: 376px;
@@ -933,13 +981,9 @@ padding-right:60px;
 }
 
 
-
-
-
-
 /*<staff>*/
 
-.crew{
+.crew {
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2px;
@@ -963,7 +1007,7 @@ margin-bottom:10px;
 
  .staff p {
  margin-bottom:60px;
- line-height:28px 
+ line-height:28px; 
 }
 
 .staff{
@@ -996,7 +1040,7 @@ padding-right:30px;
         color:white;
         justify-content: space-evenly;
         }
-       .menu-desktop a{
+       .menu-desktop a {
        font-family: 'Montserrat', sans-serif;
        font-weight: 500;
        }
