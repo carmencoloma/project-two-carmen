@@ -1,10 +1,8 @@
- Enter your Styles below! */
-
 body { 
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	}
-/*<top>*/
+
 .bigbox {
 margin:50px auto;
 width:780px;
@@ -17,7 +15,7 @@ height:10px;
 	margin: 20px auto;
 	outline: none;
 }
-/*<slideshowend>*/
+
 
 .iframe-container {
   position: relative;
@@ -145,38 +143,9 @@ padding-left: 30px;
 padding-bottom: 20px;
 }
 
-/*home*/
 
-/*typewriter*/
-.cursor::after { color: black; 
-}
-#text {
-  padding: 0.5em;
-  width: 100%;
-  word-wrap: break-word;
-  text-align: center;
-  user-select: none;
-}
-#text::after {
-  content: "_";
-  opacity: 0;
-  animation: cursor 0.5s infinite alternate;
-}
-
-@keyframes cursor {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.8;
-  }
-}
-
-
-
-
-/*<title>*/
-/*@-webkit-keyframes typing {
+/*<typewriter>*/
+@-webkit-keyframes typing {
     from { width: 100% }
     to { width:0 }
 }
@@ -213,17 +182,16 @@ h2 span {
     right:0;
     width:0;
     background: white; /* same as background */
-    /*border-left: .1em solid black;
+    border-left: .1em solid black;
     
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    /*-webkit-animation: typing 18s steps(25, end), /* # of steps = # of characters */
-/*                        blink-caret 1s step-end infinite;
-    -moz-animation: typing 17s steps(30, end),  # of steps = # of characters 
+    -webkit-animation: typing 18s steps(25, end), /* # of steps = # of characters */
                         blink-caret 1s step-end infinite;
-}*/
-/*<title>*/
+    -moz-animation: typing 17s steps(30, end),  /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
 
 .section-div {
 text-align: center;
@@ -275,10 +243,9 @@ max-width: 850px;
 font-family:'Playfair Display', sans-serif;
 font-size : 25px;
 text-align: center;
-line-height: 25px;
+line-height: 16px;
 color:#8B4513;
-margin-top:10px;
-margin-bottom:5px;
+margin-top:15px;
 }
 
 .text-block p {
@@ -286,11 +253,11 @@ font-family:'Montserrat', sans-serif;
 font-weight: 300;
 font-size : 12px;
 text-align: center;
-line-height: 19px;
+line-height: 17px;
 color:black;
+margin-top: 15px;
 margin-left:50px;
 margin-right:50px;
-margin-bottom:50px;
 }
 
 
@@ -304,15 +271,13 @@ margin-bottom:50px;
 display: grid;
 grid-template-columns: 1fr;
 position: absolute;
-right:10px;
-left:10px;
 background-color: white;
-top: 160px;
-bottom: 30px;
+top: 170px;
+bottom: 60px;
 } 
 
 .container img {
- padding-top: 50px;
+ padding-top: 30px;
  }
 
 
@@ -483,10 +448,7 @@ margin-bottom: 20px;
   grid-gap:60px;
 }
 
-/*photos{
-padding-left:10px;
-padding-right:10px;
-}*/
+
 
 .wrapper { 
 background-color:#663300;
@@ -583,10 +545,7 @@ border-radius: 50%;
 /* hoverend staff*/
 
 
-/*
- 	.home .grid2 img
- 	{padding-top: 50px;
- 	padding-left: 80px;}*/
+
  
 
 
@@ -669,7 +628,7 @@ right:10px;
 left:10px;
 background-color: white;
 top: 300px;
-bottom: 450px;
+bottom: 420px;
 }
 
 .text-block h2 {
@@ -685,7 +644,7 @@ margin-bottom:20px;
 .text-block p {
 font-family:'Montserrat', sans-serif;
 font-weight: 300;
-font-size : 13px;
+font-size : 14px;
 text-align: center;
 line-height: 25px;
 color:black;
@@ -705,7 +664,17 @@ margin-left: 450px;
 max-width: 750px;
 }
 
-/*<title>*/
+.title {
+font-family:'Playfair Display', serif;
+font-size: 65px;
+padding-left:81px;
+text-align: left;
+padding-top: 60px;
+padding-bottom:20px; 
+color:#8B4513;
+}
+
+/*<typewriter>*/
 @-webkit-keyframes typing {
     from { width: 100% }
     to { width:0 }
@@ -890,7 +859,7 @@ padding-bottom:80px;
 padding-bottom:3px;
 }
 
-/*glow*/
+/*gloweffect*/
 .wrapper figure {
 	position: relative;
 }
@@ -925,7 +894,7 @@ padding-bottom:3px;
 	}
 }
 
-/*glow*/
+
 
 .image-resize2 {
 padding-top:20px;
@@ -1015,7 +984,7 @@ padding-left:30px;
 padding-right:30px;
 }
 
-/*nava*/
+/*nav*/
 
  .menu-desktop {
         width: 100%;
